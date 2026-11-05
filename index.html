@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="國小一至六年級線上互動題庫">
+  <title>小學習｜線上題庫平台</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-icon">📚</div>
+      <h1>小學習・線上題庫</h1>
+      <p>每天進步一點點，讓學習變得更有趣！</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="home-screen">
+      <div class="section-heading">
+        <h2>🎒 選擇年級</h2>
+        <p>請選擇你要練習的年級</p>
+      </div>
+
+      <div id="grade-list" class="grade-grid"></div>
+
+      <div id="subject-section" hidden>
+        <div class="section-heading">
+          <h2>📖 選擇科目</h2>
+          <p id="selected-grade"></p>
+        </div>
+        <div id="subject-list" class="subject-grid"></div>
+      </div>
+
+      <div id="unit-section" hidden>
+        <div class="section-heading">
+          <h2>📝 選擇單元</h2>
+          <p id="selected-subject"></p>
+        </div>
+        <div id="unit-list" class="unit-list"></div>
+      </div>
+    </section>
+
+    <section id="quiz-screen" hidden>
+      <button class="back-btn" id="back-home">← 返回題庫</button>
+      <div class="quiz-header">
+        <h2 id="quiz-title"></h2>
+        <p id="quiz-progress"></p>
+      </div>
+      <div id="quiz-content"></div>
+      <div class="quiz-actions">
+        <button id="submit-answer">完成作答並批改</button>
+      </div>
+    </section>
+
+    <section id="result-screen" hidden>
+      <div class="result-card">
+        <h2>🎉 測驗完成！</h2>
+        <div id="score-display"></div>
+        <div id="result-details"></div>
+        <button id="retry-wrong">🔄 錯題重練</button>
+        <button id="retry-all" class="secondary-btn">重新測驗</button>
+        <button id="back-result" class="secondary-btn">回到題庫首頁</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>小學習線上題庫平台｜一起快樂學習！</p>
+  </footer>
+
+  <script src="data/questions.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
